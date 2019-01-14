@@ -1,6 +1,4 @@
 # koa vs express
-
-
 ## How Koa Compares to Express?
 
 Express is a complete NodeJS application framework. Koa is developed by the Express team, however, it has a different focus. Koa concentrates its efforts on core middleware functionality. NodeJS middleware are routines that have access to the Request object (req) and Response object (res). These routines are called before route handlers, so they live in the “middle” between the client the response-generating route logic. A NodeJS application can “chain” middleware routines into a custom request/response pipeline. The pipeline can act on the request and response, including the headers and body. Both Express and Koa include middleware, but the implementation approach is quite different.
