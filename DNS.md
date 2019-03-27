@@ -16,3 +16,6 @@
 
 
 An example of a recursive DNS process is shown below.
+
+
+![image](https://user-images.githubusercontent.com/5827617/55053791-a71a0300-50a0-11e9-905c-277da3b54b10.png)
