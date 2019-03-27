@@ -1,5 +1,4 @@
-##How Does DNS Work?
-
+# How Does DNS Work?
 
 1. A check is made to see if the details of that name are known locally, e.g., if the browser has made a previous request from that same domain name or there is an entry in the local DNS registry (e.g., hosts.txt on Windows).
 
