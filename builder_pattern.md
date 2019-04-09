@@ -23,8 +23,8 @@ BankAccount account = new BankAccount(123L, "Bart", 100.00);
 # Builder Pattern
 
 - Thus, there are two specific problems that we need to solve:
- - Too many constructor arguments.
- - Incorrect object state.
+  - Too many constructor arguments.
+  - Incorrect object state.
 
 ```java
 public class BankAccount {
