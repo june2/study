@@ -1,4 +1,5 @@
 # The Problem
+
 ```java
 public class BankAccount {
     private long accountNumber;
@@ -16,8 +17,15 @@ public class BankAccount {
 ```java
 BankAccount account = new BankAccount(123L, "Bart", 100.00);
 ```
+- This code is fine. However, If we had 10 different parameters, it would become very difficult to identify what's what in the constructor at a single glance. To make it worse, some of those values might be optional, which means that we'll need to create a bunch of overloaded constructors to deal with all possible combinations, or we'll have to pass nulls to our constructor.
+
 
 # Builder Pattern
+
+- Thus, there are two specific problems that we need to solve:
+ - Too many constructor arguments.
+ - Incorrect object state.
+
 ```java
 public class BankAccount {
     public static class Builder {
@@ -65,6 +73,9 @@ public class BankAccount {
 ```
 
 # lombok
+
+- We can simply use the builder pattern with lombok.
+
 ```java
 @Getter
 @Setter
