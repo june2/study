@@ -1,5 +1,5 @@
 # The Problem
-```
+```java
 public class BankAccount {
     private long accountNumber;
     private String owner;
