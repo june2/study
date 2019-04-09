@@ -13,12 +13,12 @@ public class BankAccount {
 }
 ```
 
-```
+```java
 BankAccount account = new BankAccount(123L, "Bart", 100.00);
 ```
 
 # Builder Pattern
-```
+```java
 public class BankAccount {
     public static class Builder {
         private long accountNumber; //This is important, so we'll pass it to the constructor.
@@ -61,5 +61,17 @@ public class BankAccount {
         //Constructor is now private.
     }
     //Getters and setters omitted for brevity.
+}
+```
+
+# lombok
+```java
+@Getter
+@Setter
+@Builder
+public class BankAccount {
+    private long accountNumber;
+    private String owner;
+    private double balance;
 }
 ```
