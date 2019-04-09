@@ -72,6 +72,15 @@ public class BankAccount {
 }
 ```
 
+```
+BankAccount account = new BankAccount.Builder(1234L)
+            .withOwner("Marge")
+            .atBranch("Springfield")
+            .openingBalance(100)
+            .atRate(2.5)
+            .build();
+```
+
 # lombok
 
 - We can simply use the builder pattern with lombok.
