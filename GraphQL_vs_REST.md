@@ -3,13 +3,12 @@
 
 1. Multiple Endpoints (Multiple Round Trips)
 In RESTful services an URL just denotes a single resource. So when there is an need for accessing multiple resources you need to call multiple endpoints and therefore leading to multiple round trips for getting all the necessary data.
-
-For example, let's consider a blogging application. You have a blog post and each post has comments. A typical REST endpoints for this will look like
-
+```
 GET /posts/<postId> - To fetch a particular post
 GET /posts/<postId>/comments - To fetch all comments related to a post
 GET /posts/<postId>/comments/<commentId> - To fetch a particular comment of a particular post
-You can see that the length of the endpoints getting increased. As the relations between entities increases so does the amount endpoint URLs. As the application grows it becomes cumbersome to maintain these APIs.
+```
+You can see that the length of the endpoints getting increased. As the relations between entities increases so does the amount endpoint URLs.
 
 2. Overfetching/Underfetching Data
 There are times when you interface with an API that you get unnecessary data along with the relevant ones and sometimes you don't receive enough data so you end up making multiple trips. This is a common problem in RESTful services. There are situations where you may need only 2-3 values but you get around 20-25 values as the response. This just leads to a transferring large amounts of unused data there by increasing the response time. In the latter case you may need more information than what you get from a single endpoint so therefore it's necessary to make multiple round trips. This also leads to increase in the overall time taken for the client to have all the required data.
@@ -30,7 +29,7 @@ The client isn't aware of the response structure until it receives it. So the cl
 
 1. One Request To Get Them All
 A GraphQL service exposes only one endpoints through which the client can pass the necessary query to retrieve the data. With the same example that was considered previously let's look at the GraphQL query
-
+```
 {
     findPost(id: <postId>) {
         id
@@ -44,6 +43,7 @@ A GraphQL service exposes only one endpoints through which the client can pass t
         }
     }
 }
+```
 As you see we get all the necessary data in just a single request. So when you want a new field you just add it to the query and it will start appearing in the response.
 
 2. Strongly Typed
@@ -65,7 +65,7 @@ GraphQL doesn't have support for browser and mobile caching unlike RESTful servi
 
 2. Monitoring and Error Reporting
 RESTful services leverage the HTTP status codes for different errors that can be encountered. This makes the monitoring the APIs very easy and effortless for the developer. But with GraphQL services always return 200 OK response. A typical GraphQL error message looks like this with status code 200 OK.
-
+```
 {
     errors: [
         { 
@@ -73,6 +73,7 @@ RESTful services leverage the HTTP status codes for different errors that can be
         }
     ]
 }
+```
 This is makes it very difficult to handle the error scenarios and the makes the monitoring process cumbersome.
 
 3. Exposed Schema and Resource Attacks
