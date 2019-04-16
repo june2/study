@@ -19,7 +19,7 @@ POST /posts/:id/comments
 
 
 # REST 
-## Cons 
+- Cons 
 
 1. Multiple Endpoints (Multiple Round Trips)
 In RESTful services an URL just denotes a single resource. So when there is an need for accessing multiple resources you need to call multiple endpoints and therefore leading to multiple round trips for getting all the necessary data.
@@ -44,11 +44,12 @@ Not all the data we receive from RESTful service are strongly typed i.e. they ar
 5. Client Kept In The Dark
 The client isn't aware of the response structure until it receives it. So the client is kept in the dark regarding what kind of response it can expect. This might often lead to some errors and data not handled properly thus bringing the reliability of the consuming the API low.
 
-## ecosystem
-- (Swagger) [https://swagger.io/tools/open-source/getting-started/]
+- ecosystem
+1. (Swagger) [https://swagger.io/tools/open-source/getting-started/]
 
 # GraphQL
-## Pros
+
+- Pros
 
 1. One Request To Get Them All
 A GraphQL service exposes only one endpoints through which the client can pass the necessary query to retrieve the data. As you see below, we get all the necessary data in just a single request. So when you want a new field you just add it to the query and it will start appearing in the response.
@@ -81,7 +82,7 @@ Since everything in GraphQL is schema driven extending it won't be a problem as 
 5. Transport Layer Agnostic
 This is a very nice advantage of GraphQL. The API server can exchange information over any protocol HTTP, HTTPS, WebSockets, TCP, UDP etc. This is because GraphQL is least bothered about how the information is exchanged between the client and server.
 
-## Cons
+- Cons
 
 1. Non-Existent Caching
 GraphQL doesn't have support for browser and mobile caching unlike RESTful service which uses native HTTP caching mechanisms. This leads to a developmental effort in order to achieve caching. Although tools like Relay give some support for caching they are not as mature as the caching mechanisms used by RESTful services.
@@ -105,6 +106,6 @@ Unlike RESTful services GraphQL services mandates that the client has to know ab
 4. Security - Authentication and Authorization
 There is still a confusion going on among the GraphQL community on how to handle the security part of the GraphQL server. There is still not a native solution to integrate authentication and authorization. It is usually abstracted to the business logic layer to authorize user but do we really have to parse and validate the query for an unauthenticated user is still a question in the realm of GraphQL.
 
-## ecosystem
-- (Prisma) [https://www.prisma.io/]
-- (Apollo) [https://www.apollographql.com/]
+- ecosystem
+1. (Prisma) [https://www.prisma.io/]
+2. (Apollo) [https://www.apollographql.com/]
