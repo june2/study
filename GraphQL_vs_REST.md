@@ -1,6 +1,6 @@
 # GaphQL VS REST
 
-- REST API is usually described as a list of endpoints
+- REST API is usually described as a list of endpoints.
 
 ```
 GET /posts/:id
@@ -9,7 +9,11 @@ GET /posts/:id/comments
 POST /posts/:id/comments
 ```
 
-- In GraphQL, On the other hand, the API has one endpoint
+- In GraphQL, On the other hand, the API has normally one endpoint.
+
+```
+/grapql
+```
 
 ![image](https://user-images.githubusercontent.com/5827617/56190798-fb901d00-6065-11e9-81af-0f1073a9bee5.png)
 
