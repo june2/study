@@ -107,7 +107,7 @@ There is still a confusion going on among the GraphQL community on how to handle
 - [Apollo](https://www.apollographql.com/)
 
 # Conclusion
-- What should we choose between RESTful and GraphQL? You can choose the following criteria.
+- What should we choose between RESTful and GraphQL? You can choose from the following criteria.
     - GraphQL
         1. When you need to be able to respond to different requests of different shapes 
         2. When most requests correspond to Create-Read-Update-Delete (CRUD)
