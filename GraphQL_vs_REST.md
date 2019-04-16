@@ -1,13 +1,31 @@
+# GaphQL VS REST
+
+- REST API is usually described as a list of endpoints
+
+```
+GET /posts/:id
+GET /authors/:id
+GET /posts/:id/comments
+POST /posts/:id/comments
+```
+
+- In GraphQL, On the other hand, the API has one endpoint
+
+![image](https://user-images.githubusercontent.com/5827617/56190798-fb901d00-6065-11e9-81af-0f1073a9bee5.png)
+
+
 # REST 
 ## Cons 
 
 1. Multiple Endpoints (Multiple Round Trips)
 In RESTful services an URL just denotes a single resource. So when there is an need for accessing multiple resources you need to call multiple endpoints and therefore leading to multiple round trips for getting all the necessary data.
+
 ```
 GET /posts/<postId> - To fetch a particular post
 GET /posts/<postId>/comments - To fetch all comments related to a post
 GET /posts/<postId>/comments/<commentId> - To fetch a particular comment of a particular post
 ```
+
 You can see that the length of the endpoints getting increased. As the relations between entities increases so does the amount endpoint URLs.
 
 2. Overfetching/Underfetching Data
