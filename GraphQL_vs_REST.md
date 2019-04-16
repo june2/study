@@ -105,3 +105,15 @@ There is still a confusion going on among the GraphQL community on how to handle
 3. ecosystem
 - [Prisma](https://www.prisma.io/)
 - [Apollo](https://www.apollographql.com/)
+
+# Conclusion
+- What should we choose between RESTful and GraphQL? You can choose the following criteria.
+    - GraphQL
+        1. When you need to be able to respond to different requests of different shapes 
+        2. When most requests correspond to Create-Read-Update-Delete (CRUD)
+    - RESTful
+        1. When you want to use Caching by HTTP and HTTPs well
+        2. When there are requests that are not processed with simple text such as file transfer
+        3. When the structure of the request is fixed
+        
+- However, You do not neet to choose only one, you can use both of them.
