@@ -36,9 +36,7 @@ You can see that the length of the endpoints getting increased. As the relations
 There are times when you interface with an API that you get unnecessary data along with the relevant ones and sometimes you don't receive enough data so you end up making multiple trips. This is a common problem in RESTful services. There are situations where you may need only 2-3 values but you get around 20-25 values as the response. This just leads to a transferring large amounts of unused data there by increasing the response time. In the latter case you may need more information than what you get from a single endpoint so therefore it's necessary to make multiple round trips. This also leads to increase in the overall time taken for the client to have all the required data.
 
 3. API Versioning
-API versioning is a method followed to avoid breaking the client application with the changes in response format. When there is an change in the API response format a new version is created. This is done so that production client applications can run as expected and giving some breathing time to developers to migrate to the new API version.
-
-But this versioning becomes a problem as when a new version is released it means new endpoints. Maintenance and consuming of API becomes tough and also often leads to duplicated code.
+API versioning is a method followed to avoid breaking the client application with the changes in response format. When there is an change in the API response format a new version is created. This is done so that production client applications can run as expected and giving some breathing time to developers to migrate to the new API version. But this versioning becomes a problem as when a new version is released it means new endpoints. Maintenance and consuming of API becomes tough and also often leads to duplicated code.
 
 4. Weak Typing
 Not all the data we receive from RESTful service are strongly typed i.e. they are not properly given a particular data. This becomes a problem while documenting APIs as we have to specify what kind of data the client can expect by calling the endpoint.
@@ -53,7 +51,7 @@ The client isn't aware of the response structure until it receives it. So the cl
 ## Pros
 
 1. One Request To Get Them All
-A GraphQL service exposes only one endpoints through which the client can pass the necessary query to retrieve the data. With the same example that was considered previously let's look at the GraphQL query
+A GraphQL service exposes only one endpoints through which the client can pass the necessary query to retrieve the data. As you see below, we get all the necessary data in just a single request. So when you want a new field you just add it to the query and it will start appearing in the response.
 ```
 {
     findPost(id: <postId>) {
@@ -69,7 +67,7 @@ A GraphQL service exposes only one endpoints through which the client can pass t
     }
 }
 ```
-As you see we get all the necessary data in just a single request. So when you want a new field you just add it to the query and it will start appearing in the response.
+
 
 2. Strongly Typed
 GraphQL is dominated by schema which are strongly typed. These types can either be primitive or derived. The strong typing system allows the API to be self documented thus making the client aware on what response he will get when querying a particular query.
@@ -89,7 +87,7 @@ This is a very nice advantage of GraphQL. The API server can exchange informatio
 GraphQL doesn't have support for browser and mobile caching unlike RESTful service which uses native HTTP caching mechanisms. This leads to a developmental effort in order to achieve caching. Although tools like Relay give some support for caching they are not as mature as the caching mechanisms used by RESTful services.
 
 2. Monitoring and Error Reporting
-RESTful services leverage the HTTP status codes for different errors that can be encountered. This makes the monitoring the APIs very easy and effortless for the developer. But with GraphQL services always return 200 OK response. A typical GraphQL error message looks like this with status code 200 OK.
+RESTful services leverage the HTTP status codes for different errors that can be encountered. This makes the monitoring the APIs very easy and effortless for the developer. But with GraphQL services always return 200 OK response. A typical GraphQL error message looks like this with status code 200 OK. This is makes it very difficult to handle the error scenarios and the makes the monitoring process cumbersome.
 ```
 {
     errors: [
@@ -99,7 +97,7 @@ RESTful services leverage the HTTP status codes for different errors that can be
     ]
 }
 ```
-This is makes it very difficult to handle the error scenarios and the makes the monitoring process cumbersome.
+
 
 3. Exposed Schema and Resource Attacks
 Unlike RESTful services GraphQL services mandates that the client has to know about the data schema to query. If you are exposing your API to a third party you are basically exposing your internal data structure. A great care has to be taken care so that the client doesn't create expensive join queries that can potentially lead to Denial of Service (DoS) attacks on your server.
