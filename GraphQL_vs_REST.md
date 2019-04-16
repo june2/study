@@ -12,7 +12,7 @@ POST /posts/:id/comments
 - In GraphQL, On the other hand, the API has normally one endpoint.
 
 ```
-/grapql
+/graphql
 ```
 
 ![image](https://user-images.githubusercontent.com/5827617/56190798-fb901d00-6065-11e9-81af-0f1073a9bee5.png)
@@ -45,6 +45,9 @@ Not all the data we receive from RESTful service are strongly typed i.e. they ar
 
 5. Client Kept In The Dark
 The client isn't aware of the response structure until it receives it. So the client is kept in the dark regarding what kind of response it can expect. This might often lead to some errors and data not handled properly thus bringing the reliability of the consuming the API low.
+
+## ecosystem
+- (Swagger) [https://swagger.io/tools/open-source/getting-started/]
 
 # GraphQL
 ## Pros
@@ -104,8 +107,6 @@ Unlike RESTful services GraphQL services mandates that the client has to know ab
 4. Security - Authentication and Authorization
 There is still a confusion going on among the GraphQL community on how to handle the security part of the GraphQL server. There is still not a native solution to integrate authentication and authorization. It is usually abstracted to the business logic layer to authorize user but do we really have to parse and validate the query for an unauthenticated user is still a question in the realm of GraphQL.
 
-5. N + 1 Query Problem
-In RESTful services it's very easy to log the SQL query performed and further optimize it. But in the case of GraphQL where the resolving nature is dynamic it's very tough to get the exact query and optimize it further. Sometimes the field resolvers might lead to N + 1 query problems and expensive join operations. But Facebook is developing tools like DataLoader to solve this exact problem. So maybe in the future this won't be a disadvantage.
-
-6. Young Ecosystem
-GraphQL is pretty much like a baby in this API ecosystem which means there will be issues and breaking changes every now and then so we have to be very diligent while using any libraries and modules associated with GraphQL.
+## ecosystem
+- (Prisma) [https://www.prisma.io/]
+- (Apollo) [https://www.apollographql.com/]
