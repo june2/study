@@ -23,14 +23,11 @@ POST /posts/:id/comments
 
 1. Multiple Endpoints (Multiple Round Trips)
 In RESTful services an URL just denotes a single resource. So when there is an need for accessing multiple resources you need to call multiple endpoints and therefore leading to multiple round trips for getting all the necessary data.
-
 ```
 GET /posts/<postId> - To fetch a particular post
 GET /posts/<postId>/comments - To fetch all comments related to a post
 GET /posts/<postId>/comments/<commentId> - To fetch a particular comment of a particular post
 ```
-
-You can see that the length of the endpoints getting increased. As the relations between entities increases so does the amount endpoint URLs.
 
 2. Overfetching/Underfetching Data
 There are times when you interface with an API that you get unnecessary data along with the relevant ones and sometimes you don't receive enough data so you end up making multiple trips. This is a common problem in RESTful services. There are situations where you may need only 2-3 values but you get around 20-25 values as the response. This just leads to a transferring large amounts of unused data there by increasing the response time. In the latter case you may need more information than what you get from a single endpoint so therefore it's necessary to make multiple round trips. This also leads to increase in the overall time taken for the client to have all the required data.
@@ -45,7 +42,7 @@ Not all the data we receive from RESTful service are strongly typed i.e. they ar
 The client isn't aware of the response structure until it receives it. So the client is kept in the dark regarding what kind of response it can expect. This might often lead to some errors and data not handled properly thus bringing the reliability of the consuming the API low.
 
 - ecosystem
-1. (Swagger) [https://swagger.io/tools/open-source/getting-started/]
+1. [Swagge](https://swagger.io/tools/open-source/getting-started/)
 
 # GraphQL
 
@@ -99,7 +96,6 @@ RESTful services leverage the HTTP status codes for different errors that can be
 }
 ```
 
-
 3. Exposed Schema and Resource Attacks
 Unlike RESTful services GraphQL services mandates that the client has to know about the data schema to query. If you are exposing your API to a third party you are basically exposing your internal data structure. A great care has to be taken care so that the client doesn't create expensive join queries that can potentially lead to Denial of Service (DoS) attacks on your server.
 
@@ -107,5 +103,5 @@ Unlike RESTful services GraphQL services mandates that the client has to know ab
 There is still a confusion going on among the GraphQL community on how to handle the security part of the GraphQL server. There is still not a native solution to integrate authentication and authorization. It is usually abstracted to the business logic layer to authorize user but do we really have to parse and validate the query for an unauthenticated user is still a question in the realm of GraphQL.
 
 - ecosystem
-1. (Prisma) [https://www.prisma.io/]
-2. (Apollo) [https://www.apollographql.com/]
+1. [Prisma](https://www.prisma.io/)
+2. [Apollo](https://www.apollographql.com/)
