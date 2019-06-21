@@ -11,10 +11,10 @@
 - Elastic Beanstalk will then let the deployed application version handle the request and return a response. 
 - S3 is used to store different application versions.
 
-                                 - Elastic Beanstalkdiagram -
+1. Elastic Beanstalkdiagram 
 ![image](https://user-images.githubusercontent.com/5827617/59894809-f6ac6880-941c-11e9-9f1a-9631b0b71a73.png)
 
-                                 - The internals of an Elastic Beanstalk application -
+2. The internals of an Elastic Beanstalk application
 ![image](https://user-images.githubusercontent.com/5827617/59894851-193e8180-941d-11e9-8ef1-5f1e06cdfb81.png)
 
 
