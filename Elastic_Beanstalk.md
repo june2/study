@@ -17,8 +17,8 @@
 ### 2. The internals of an Elastic Beanstalk application
 ![image](https://user-images.githubusercontent.com/5827617/59894851-193e8180-941d-11e9-8ef1-5f1e06cdfb81.png)
 
-- Elastic Beanstalk starts EC2 instances within an Auto Scaling Group and a configurable amount of availability zones. These instances are used to run your application. It places the instances inside VPC and configures a security group to protect your instances, by default only accepting connections on port 80.
-
+- Elastic Beanstalk starts EC2 instances within an Auto Scaling Group and a configurable amount of availability zones. It places the instances inside VPC and configures a security group to protect your instances, by default only accepting connections on port 80.
 - Application versions are persisted in a separate S3 bucket and can be imported either directly or from another S3 bucket.
-
-Elastic Beanstalk supports different platforms, e.g. Java SE, .NET, Node.js, PHP, or Python. On each platform you can select a predefined solution stack specifying the exact software stack of the execution runtime, e.g. 64bit Amazon Linux 2018.03 v2.7.1 running Java 8.
+- Elastic Beanstalk supports different platforms, e.g. Java SE, .NET, Node.js, PHP, or Python.
+- The domain name is managed through Route 53. Incoming traffic will be send to an Elastic Load Balancer, which acts as an entry point to your application.
+-  Elastic Beanstalk will also create Cloud Watch alarms to based on the load of your EC2 instances. (autoscaling alram, monitoring and log management)
