@@ -32,6 +32,6 @@
 
 ### Drawbacks
 - Unreliable Deployment 
-- Deployment Speed 
-- Stack Upgrades
+- Slow deployment Speed (Deployments would take five minutes at least)
+- No release notes (zero information on what has changed)
 - Old Application Versions 
