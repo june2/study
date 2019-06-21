@@ -7,5 +7,19 @@
 
 # Architecture
 
-![image](https://user-images.githubusercontent.com/5827617/56190798-fb901d00-6065-11e9-81af-0f1073a9bee5.png)
+- The client sends an HTTP request to the Elastic Beanstalk application. 
+- Elastic Beanstalk will then let the deployed application version handle the request and return a response. 
+- S3 is used to store different application versions.
 
+![image](https://user-images.githubusercontent.com/5827617/59894809-f6ac6880-941c-11e9-9f1a-9631b0b71a73.png)
+
+
+![image](https://user-images.githubusercontent.com/5827617/59894851-193e8180-941d-11e9-8ef1-5f1e06cdfb81.png)
+
+- the internals of an Elastic Beanstalk application -
+
+- Elastic Beanstalk starts EC2 instances within an Auto Scaling Group and a configurable amount of availability zones. These instances are used to run your application. It places the instances inside VPC and configures a security group to protect your instances, by default only accepting connections on port 80.
+
+- Application versions are persisted in a separate S3 bucket and can be imported either directly or from another S3 bucket.
+
+Elastic Beanstalk supports different platforms, e.g. Java SE, .NET, Node.js, PHP, or Python. On each platform you can select a predefined solution stack specifying the exact software stack of the execution runtime, e.g. 64bit Amazon Linux 2018.03 v2.7.1 running Java 8.
