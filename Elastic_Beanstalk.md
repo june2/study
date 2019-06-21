@@ -22,3 +22,16 @@
 - Elastic Beanstalk supports different platforms, e.g. Java SE, .NET, Node.js, PHP, or Python.
 - The domain name is managed through Route 53. Incoming traffic will be send to an Elastic Load Balancer, which acts as an entry point to your application.
 -  Elastic Beanstalk will also create Cloud Watch alarms to based on the load of your EC2 instances. (autoscaling alram, monitoring and log management)
+
+
+# Advantages and Drawbacks
+
+### Advantages
+- Lightning Fast Configuration with Automation
+- Price and Flexibility
+
+### Drawbacks
+- Unreliable Deployment 
+- Deployment Speed 
+- Stack Upgrades
+- Old Application Versions 
