@@ -2,12 +2,6 @@
 
 1. setup aws credentials 
 
-```
-region = ap-northeast-2
-aws_access_key_id = 
-aws_secret_access_key = 
-```
-
 2. login 
 ```
 $ aws ecr get-login --region region --no-include-email
