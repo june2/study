@@ -4,8 +4,8 @@
 
 ```
 region = ap-northeast-2
-aws_access_key_id = AKIA5HXP6VQFBTU5A2OK
-aws_secret_access_key = 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
+aws_access_key_id = 
+aws_secret_access_key = 
 ```
 
 2. login 
