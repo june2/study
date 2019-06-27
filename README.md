@@ -7,6 +7,7 @@
 - [GraphQL vs REST](https://github.com/june2/study/blob/master/GraphQL_vs_REST.md)
 - [AWS Elastic Beanstalk](https://github.com/june2/study/blob/master/AWS_Elastic_Beanstalk.md)
 - [AWS ECS](https://github.com/june2/study/blob/master/AWS_ECS.md)
+- [AWS_Batch](https://github.com/june2/study/blob/master/AWS_Batch.md)
 
 
 # Tutorial & Boilerplate
