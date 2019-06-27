@@ -11,3 +11,4 @@
 - [AWS Batch Demo - Part 1](https://www.youtube.com/watch?v=-gX9Sr6fdVc)
 - [AWS Batch Demo - Part 2](https://www.youtube.com/watch?v=HTtOJn2RHqA)
 - [Aws Batch Service In Detail](https://www.youtube.com/watch?v=egipS1_ObIs)
+- [How do I use AWS Batch as a target for my CloudWatch Events rule?](https://www.youtube.com/watch?v=hXT1VWbONP8)
