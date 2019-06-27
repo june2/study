@@ -1,4 +1,4 @@
-### AWS_Batch
+### AWS Batch
 - AWS Batch service allows you to submit your application work load on Aws in the form of Job
 - AWS Batch basically runs the dokcer image through container as an independent Job
 - No need to install or manage batch software or server clusters
