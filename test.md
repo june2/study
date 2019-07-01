@@ -1,4 +1,5 @@
 1. 【BEDORE】FAQ_Template_190318_
+
  1. data migration
   - インテント名	(의도 이름)
   - 質問文	(질문 문장)
@@ -20,10 +21,12 @@
   - 質問例更新日 (질문 예 업데이트)
 
  2. note
+ 
  3. pivot_all_2
+ 
  4. pivot_all_1
+ 
  5. all (data migration 동일)
-
 
 
 2. 【BEDORE】Metadata_190318_
