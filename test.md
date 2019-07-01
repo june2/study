@@ -1,5 +1,7 @@
 1. 【BEDORE】FAQ_Template_190318_
-1) data migration
+
+ 1). data migration
+
 -インテント名	(의도 이름)
 -質問文	(질문 문장)
 -回答文	(답변 글)
