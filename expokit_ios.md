@@ -3,7 +3,7 @@
 2. Open xcode project (*.xcworkspace)
 3. select simulator or device / CMD + R
 
-## Upload ipa
+## Build release and Upload to App store
 
 1. Select 'Generic iOS Device'
 
