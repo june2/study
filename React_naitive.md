@@ -26,6 +26,6 @@
  - Expo dose not support native moudles. To use them such as In App Purchase, you need to eject react-native source from Expo.
 [Documentation](https://docs.expo.io/versions/latest/expokit/eject/)
  
-## Useful npm react-native modules
+## Useful react-native modules
  - [react-native-iap](https://github.com/dooboolab/react-native-iap)
  - [react-native-firebase](https://github.com/invertase/react-native-firebase)
