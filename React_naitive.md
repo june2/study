@@ -1,9 +1,9 @@
 # Expo
 
 Expo is a framework and a platform for universal React applications. It is a set of tools and services built around React Native and native platforms that help you develop, build, deploy, and quickly iterate on iOS, Android, and web apps from the same JavaScript/TypeScript codebase.
-
 [Documentation](https://docs.expo.io/versions/v35.0.0/get-started/installation/)
 
+## Pros and Cons
 - Pros
  - Easy to use
  - Immediate results
@@ -21,8 +21,9 @@ Expo is a framework and a platform for universal React applications. It is a set
  - Javascript source is hosted in their cloud
  - The app is going to be at least arond 30MB on iOS and at least around 20MB on Android because Expo is including all libraries in the App for now
  
+## Native modules issue
 - Native modules in Expo
-  - Expo dose not support native moudles. To use them, you need to eject react-native source from Expo.
+  - Expo dose not support native moudles. To use them such as In App Purchase, you need to eject react-native source from Expo.
  
 
  
