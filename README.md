@@ -8,7 +8,9 @@
 - [AWS Elastic Beanstalk](https://github.com/june2/study/blob/master/AWS_Elastic_Beanstalk.md)
 - [AWS ECS](https://github.com/june2/study/blob/master/AWS_ECS.md)
 - [AWS Batch](https://github.com/june2/study/blob/master/AWS_Batch.md)
-
+- [React Native](https://github.com/june2/study/blob/master/react_naitive.md)
+    - [Exopkit IOS](https://github.com/june2/study/blob/master/expokit_ios.md)
+    - [Exopkit ANDROID](https://github.com/june2/study/blob/master/expokit_android.md)
 
 # Tutorial & Boilerplate
 - [Node (express)](https://github.com/june2/knowre-interview-server-complete)
