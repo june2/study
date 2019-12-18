@@ -1,5 +1,6 @@
 # Route53 
-## Latency-Based Policy
+
+Latency-Based Policy
 
 - Allows you to route your traffic based on the lowest network latency for your end user(which rergion will give them the fastest response time).
 
