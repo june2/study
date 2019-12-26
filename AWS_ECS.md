@@ -1,4 +1,4 @@
-### Amazon Elastic Container Service (Amazon ECS) 
+### Amazon Elastic Container Repository (Amazon ECR) 
 
 1. setup aws credentials 
 
