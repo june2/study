@@ -4,6 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/5827617/71541165-10180980-2998-11ea-9ea4-494f1ff0d348.png)
 
+--- 
+
 # Multi-AZ deployments VS Read Replicas
 
 ![image](https://user-images.githubusercontent.com/5827617/71459722-21241780-27ec-11ea-9a03-d4a553da0974.png)
