@@ -1,5 +1,6 @@
 # AWS Security Token Service (AWS STS)
-- AWS Security Token Service (AWS STS) is the service that you can use to create and provide trusted users with temporary security credentials that can control access to your AWS resources. Temporary security credentials work almost identically to the long-term access key credentials that your IAM users can use.
+- AWS Security Token Service (AWS STS) is the service that you can use to create and provide trusted users with temporary security credentials that can control access to your AWS resources.
+- Temporary security credentials work almost identically to the long-term access key credentials that your IAM users can use.
 
 
 ![image](https://user-images.githubusercontent.com/5827617/71540983-73546c80-2995-11ea-92c5-a2759f136ba6.png)
