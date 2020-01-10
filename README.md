@@ -10,9 +10,23 @@
     - [Exopkit ANDROID](https://github.com/june2/study/blob/master/expokit_android.md)
 - AWS
   - [AWS Elastic Beanstalk](https://github.com/june2/study/blob/master/AWS_Elastic_Beanstalk.md)
-  - [AWS ECS](https://github.com/june2/study/blob/master/AWS_ECS.md)
+  - [AWS_ECR](https://github.com/june2/study/blob/master/AWS_ECR.md)
   - [AWS Batch](https://github.com/june2/study/blob/master/AWS_Batch.md)
   - [AWS_Route53](https://github.com/june2/study/blob/master/AWS_Route53.md)
+  - [AWS Bastion](https://github.com/june2/study/blob/master/AWS_Bastion.md)
+   
+  - [AWS_Budgets](https://github.com/june2/study/blob/master/AWS_Budgets.md)
+  - [AWS_EBS_volume](https://github.com/june2/study/blob/master/AWS_EBS_volume.md)
+  - [AWS_Glacier](https://github.com/june2/study/blob/master/AWS_Glacier.md)
+  - [AWS_OpsWorks](https://github.com/june2/study/blob/master/AWS_OpsWorks.md)
+  - [AWS_Pilot_Light](https://github.com/june2/study/blob/master/AWS_Pilot_Light.md)
+ 
+  - [AWS_RDS](https://github.com/june2/study/blob/master/AWS_RDS.md)
+  - [AWS_SSD_VS_HDD](https://github.com/june2/study/blob/master/AWS_SSD_VS_HDD.md)
+  - [AWS_STS](https://github.com/june2/study/blob/master/AWS_STS.md)
+  - [AWS_cloud_trail](https://github.com/june2/study/blob/master/AWS_cloud_trail.md)
+  - [AWS_security_and_compliance](https://github.com/june2/study/blob/master/AWS_security_and_compliance.md)
+  
 
 
 # Tutorial & Boilerplate
