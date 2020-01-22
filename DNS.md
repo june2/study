@@ -19,3 +19,45 @@ An example of a recursive DNS process is shown below.
 
 
 ![image](https://user-images.githubusercontent.com/5827617/55053791-a71a0300-50a0-11e9-905c-277da3b54b10.png)
+
+
+
+
+# DNS Types: 3 Types of DNS Servers
+The following are the most common DNS server types that are used to resolve hostnames into IP addresses.
+
+### DNS Resolver
+A DNS resolver (recursive resolver), is designed to receive DNS queries, which include a human-readable hostname such as “www.example.com”, and is responsible for tracking the IP address for that hostname.
+
+### DNS Root Server
+The root server is the first step in the journey from hostname to IP address. The DNS Root Server extracts the Top Level Domain (TLD) from the user’s query — for example, www.example.com — and provides details for the .com TLD Name Server. In turn, that server will provide details for domains with the .com DNS zone, including “example.com”.
+
+There are 13 root servers worldwide, indicated by the letters A through M, operated by organizations like the Internet Systems Consortium, Verisign, ICANN, the University of Maryland, and the U.S. Army Research Lab.
+
+### Authoritative DNS Server
+Higher level servers in the DNS hierarchy define which DNS server is the “authoritative” name server for a specific hostname, meaning that it holds the up-to-date information for that hostname.
+
+The Authoritative Name Server is the last stop in the name server query—it takes the hostname and returns the correct IP address to the DNS Resolver (or if it cannot find the domain, returns the message NXDOMAIN).
+
+
+# DNS Types: 10 Top DNS Record Types
+DNS servers create a DNS record to provide important information about a domain or hostname, particularly its current IP address. The most common DNS record types are:
+
+- Address Mapping record (A Record)—also known as a DNS host record, stores a hostname and its corresponding IPv4 address.
+IP Version 6 Address record (AAAA Record)—stores a hostname and its corresponding IPv6 address.
+
+- Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname. When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.
+
+- Mail exchanger record (MX Record)—specifies an SMTP email server for the domain, used to route outgoing emails to an email server.
+
+- Name Server records (NS Record)—specifies that a DNS Zone, such as “example.com” is delegated to a specific Authoritative Name Server, and provides the address of the name server.
+
+- Reverse-lookup Pointer records (PTR Record)—allows a DNS resolver to provide an IP address and receive a hostname (reverse DNS lookup).
+
+- Certificate record (CERT Record)—stores encryption certificates—PKIX, SPKI, PGP, and so on.
+
+- Service Location (SRV Record)—a service location record, like MX but for other communication protocols.
+
+- Text Record (TXT Record)—typically carries machine-readable data such as opportunistic encryption, sender policy framework, DKIM, DMARC, etc.
+
+- Start of Authority (SOA Record)—this record appears at the beginning of a DNS zone file, and indicates the Authoritative Name Server for the current DNS zone, contact details for the domain administrator, domain serial number, and information on how frequently DNS information for this zone should be refreshed.
