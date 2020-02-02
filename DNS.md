@@ -44,7 +44,8 @@ The Authoritative Name Server is the last stop in the name server query—it tak
 DNS servers create a DNS record to provide important information about a domain or hostname, particularly its current IP address. The most common DNS record types are:
 
 - Address Mapping record (A Record)—also known as a DNS host record, stores a hostname and its corresponding IPv4 address.
-IP Version 6 Address record (AAAA Record)—stores a hostname and its corresponding IPv6 address.
+
+- IP Version 6 Address record (AAAA Record)—stores a hostname and its corresponding IPv6 address.
 
 - Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname. When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.
 
